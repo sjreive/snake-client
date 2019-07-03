@@ -25,6 +25,9 @@ const handleUserInput = function (stdin, conn) {
       case 'd' :
         conn.write("Move: right")
         break;
+      case 'p' :
+        conn.write("Say: catch me if you can!")
+        break;
       case '\u0003' :
         process.exit();
     }
